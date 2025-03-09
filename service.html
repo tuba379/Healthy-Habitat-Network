@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Healthy Habitat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .service-card {
+      margin-bottom: 30px;
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .sort-options {
+      margin-bottom: 30px;
+    }
+
+    .read-more {
+      background-color: #007bff;
+      color: white;
+      padding: 5px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .read-more:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <section class="container py-5">
+    <h2>Our Services</h2>
+    <p>Discover a range of services to promote well-being and sustainability.</p>
+
+    <!-- Filters Section -->
+    <div class="row sort-options">
+      <div class="col-md-6">
+        <label for="sort-rating">Sort by Top Rating:</label>
+        <select id="sort-rating" class="form-select">
+          <option value="high-to-low">High to Low</option>
+          <option value="low-to-high">Low to High</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="row">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="Images/service1.jpg" alt="Service 1">
+          <h3>Service 1</h3>
+          <p>Description of Service 1.</p>
+          <p><strong>Rating: 4.5/5</strong></p>
+          <a href="service-details.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="Images/service1.jpg" alt="Service 2">
+          <h3>Service 2</h3>
+          <p>Description of Service 2.</p>
+          <p><strong>Rating: 3.8/5</strong></p>
+          <a href="service-details.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="Images/service1.jpg" alt="Service 3">
+          <h3>Service 3</h3>
+          <p>Description of Service 3.</p>
+          <p><strong>Rating: 4.9/5</strong></p>
+          <a href="service-details.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="Images/service1.jpg" alt="Service 4">
+          <h3>Service 4</h3>
+          <p>Description of Service 4.</p>
+          <p><strong>Rating: 4.2/5</strong></p>
+          <a href="service-details.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="Images/service1.jpg" alt="Service 5">
+          <h3>Service 5</h3>
+          <p>Description of Service 5.</p>
+          <p><strong>Rating: 4.7/5</strong></p>
+          <a href="service-details.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="Images/service1.jpg" alt="Service 6">
+          <h3>Service 6</h3>
+          <p>Description of Service 6.</p>
+          <p><strong>Rating: 3.9/5</strong></p>
+          <a href="service-details.html" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Event listeners for sorting filters
+    document.getElementById('sort-rating').addEventListener('change', function() {
+      const value = this.value;
+      console.log('Sorted by rating:', value);
+      // Implement sorting functionality here
+    });
+  </script>
+</body>
+</html>
+
